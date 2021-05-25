@@ -18,9 +18,8 @@ export const selectedProduct = (product) => {
   };
 };
 
-//   export const removeSelectedProduct = (product) => {
-//     return {
-//       type: SET_PRODUCTS,
-//       payload: products
-//     };
-//   };
+export const removeSelectedProduct = () => {
+  return {
+    type: REMOVE_SELECTED_PRODUCT,
+  };
+};
