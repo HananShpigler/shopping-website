@@ -31,24 +31,27 @@ const ProductDetails = () => {
     return () => {
       dispatch(removeSelectedProduct());
     };
+    // eslint-disable-next-line
   }, [id]);
 
   return (
     <div className="ui grid container">
       {Object.keys(product).length === 0 ? (
-        <div>Loading...</div>
+        <div class="loader"></div>
       ) : (
         <div className="ui placeholder segment">
           <div className="ui two column stackable center aligned grid">
-            <div className="ui vertical divider">AND</div>
+            <div className="ui vertical divider">&#x27B2;</div>
             <div className="middle aligned row">
               <div className="column lp">
-                <img className="ui fluid image" src={image} />
+                <img className="ui fluid image" src={image} alt={title} />
               </div>
               <div className="column rp">
                 <h1>{title}</h1>
                 <h2>
-                  <a className="ui teal tag label">${price}</a>
+                  <a href="#void" className="ui teal tag label">
+                    ${price}
+                  </a>
                 </h2>
                 <h3 className="ui brown block header">{category}</h3>
                 <p>{description}</p>

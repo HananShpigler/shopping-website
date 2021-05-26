@@ -39,7 +39,7 @@
 
 .ui.menu.fixed {
   height: 60px;
-  padding-top: 15px;
+  padding-top: 20px;
 }
 
 .ui.grid.container {
@@ -85,9 +85,57 @@
 .ui.placeholder.segment .column .field,
 .ui.placeholder.segment .column textarea,
 .ui.placeholder.segment .column > .ui.input {
-  background-color: #ff3e6c;
-  border: 1px solid #ff3e6c;
+  background-color: blue;
+  border: 1px solid blue;
   color: #fff;
   font-size: 18px;
   margin-left: 0;
+}
+
+.ui.teal.label,
+.ui.teal.labels .label {
+  background-color: black !important;
+  border-color: black !important;
+  color: #fff !important;
+}
+
+a.ui.teal.label:hover {
+  background-color: gray !important;
+  border-color: gray !important;
+  color: #fff !important;
+}
+
+.ui.divider {
+  font-size: 2rem;
+}
+
+.home-link {
+  color: lightskyblue;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.home-link:hover {
+  color: lightsteelblue;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid black;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
