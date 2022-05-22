@@ -1,8 +1,8 @@
 # shopping-website
 ***A simple example of an online product store where you can view products and check product details.***
 
-<img src="images/1.png" width=600>
-<img src="images/2.png" width=600>
+<img src="images/1.png" width=400>
+<img src="images/2.png" width=400>
 
 ## Instructions
 ##### 1. Clone ***( using `git clone` )*** or Download the folder ***( using ***`Download ZIP`*** option )*** #####
